@@ -1,1 +1,1 @@
-Link web preview: https://devserver-main--courageous-pony-db91dc.netlify.app/
+Link web preview: https://good-old-bakery-web.netlify.app/
