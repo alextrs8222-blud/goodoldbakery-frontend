@@ -1,0 +1,185 @@
+.products-page {
+    background: #fff3df;
+    color: #4d2f1e;
+    min-height: 100vh;
+}
+
+.products-page main {
+    padding-bottom: 48px;
+}
+
+.products-page footer {
+    position: static;
+}
+
+.products-page .nav a[aria-current="page"] {
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.products-hero {
+    background: linear-gradient(135deg, #fff8f0 0%, #f6dfbd 100%);
+    border-bottom: 1px solid rgba(140, 90, 60, 0.18);
+    padding: 52px 24px 44px;
+    text-align: center;
+}
+
+.products-hero__content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.products-hero p {
+    color: #8c5a3c;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.products-hero h1 {
+    color: #5c3420;
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.product-category {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 44px 24px 0;
+}
+
+.product-category h2 {
+    color: #6f4128;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.bakery-card {
+    background: #C28B5A;
+    border-radius: 8px;
+    box-shadow: 0 12px 28px rgba(92, 52, 32, 0.16);
+    color: #fff8f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+    padding: 18px;
+    transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.bakery-card:hover {
+    box-shadow: 0 18px 36px rgba(92, 52, 32, 0.24);
+    transform: translateY(-6px);
+}
+
+.bakery-card h3 {
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 1.15;
+    margin-bottom: 14px;
+}
+
+.bakery-card img {
+    aspect-ratio: 4 / 3;
+    background: #f7dfbd;
+    border-radius: 7px;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.bakery-card p {
+    color: #fff8f0;
+    flex: 1;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 17px;
+    line-height: 1.45;
+    margin: 16px 0 14px;
+}
+
+.bakery-card strong {
+    color: #ffffff;
+    display: block;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.bakery-card button {
+    background: #6f4128;
+    border: 0;
+    border-radius: 999px;
+    color: #fff8f0;
+    cursor: pointer;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    padding: 12px 20px;
+    transition: background-color 180ms ease, transform 180ms ease;
+    width: 100%;
+}
+
+.bakery-card button:hover,
+.bakery-card button:focus-visible {
+    background: #4d2f1e;
+}
+
+.bakery-card button:focus-visible {
+    outline: 3px solid #fff8f0;
+    outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .products-hero h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-page header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .products-page .nav ul {
+        flex-wrap: wrap;
+        gap: 14px 20px;
+        margin-right: 0;
+    }
+
+    .products-hero {
+        padding: 40px 18px 34px;
+    }
+
+    .products-hero h1 {
+        font-size: 32px;
+    }
+
+    .product-category {
+        padding: 34px 18px 0;
+    }
+
+    .product-category h2 {
+        font-size: 29px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}

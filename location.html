@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
-    <title>Good OLd's Bakery</title>
+    <title>Location | Good Old' Bakery</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -21,14 +22,101 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="location.html">Location</a></li> 
+                </ul>
             </nav>
         </div>
 
     </header>
 
+    <main>
+        <section class="location-section" aria-labelledby="location-title">
+            <h1 id="location-title" class="location-title">Location</h1>
+
+            <div class="location-grid">
+                <article class="location-card">
+                    <h3>Good OLd' Bakery - Hudson Ave</h3>
+                    <img src="images/locations/location1.png" alt="Hudson Avenue Branch">
+                    <p><strong>Address:</strong> 751 Hudson Ave, Secaucus, NJ 07094, USA</p>
+                    <p><strong>Email:</strong> goodold_hudson1@gmail.com</p>
+                    <p><strong>Phone:</strong> (212) 514-0991</p>
+                    <p><strong>Working Hours:</strong> 08:00 - 19:00</p>
+                    <p>The first place held on Good OLd' Bakery</p>
+                    <button
+                        type="button"
+                        class="location-btn"
+                        onclick="openLocation(
+                            'Good OLd\' Bakery - Hudson Ave',
+                            '751 Hudson Ave, Secaucus, NJ 07094, USA'
+                        )">
+                        Details
+                    </button>
+                </article>
+
+                <article class="location-card">
+                    <h3>Good OLd' Bakery - Washington Ave</h3>
+                    <img src="images/locations/location2.png" alt="Washington Avenue Branch">
+                    <p><strong>Address:</strong> 197 Washington Ave, Carlstadt, NJ 07072, USA</p>
+                    <p><strong>Email:</strong> goodold_washington1@gmail.com</p>
+                    <p><strong>Phone:</strong> (212) 321-4278</p>
+                    <p><strong>Working Hours:</strong> 08:00 - 19:00</p>
+                    <p>The first school place on Good OLd' Bakery</p>
+                    <button
+                        type="button"
+                        class="location-btn"
+                        onclick="openLocation(
+                            'Good OLd\' Bakery - Washington Ave',
+                            '197 Washington Ave, Carlstadt, NJ 07072, USA'
+                        )">
+                        Details
+                    </button>
+                </article>
+
+                <article class="location-card">
+                    <h3>Good OLd' Bakery - Canterbury Gardens</h3>
+                    <img src="images/locations/location3.png" alt="Canterbury Gardens Branch">
+                    <p><strong>Address:</strong> 12 Canterbury Gardens, North Arlington, NJ 07031, USA</p>
+                    <p><strong>Email:</strong> goodold_canterbury1@gmail.com</p>
+                    <p><strong>Phone:</strong> (212) 223-3170</p>
+                    <p><strong>Working Hours:</strong> 08:00 - 19:00</p>
+                    <p>The first garden place on Good OLd' Bakery</p>
+                    <button
+                        type="button"
+                        class="location-btn"
+                        onclick="openLocation(
+                            'Good OLd\' Bakery - Canterbury Gardens',
+                            '12 Canterbury Gardens, North Arlington, NJ 07031, USA'
+                        )">
+                        Details
+                    </button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="location-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-branch-name">
+        <div class="modal-content">
+            <h3 id="modal-branch-name"></h3>
+
+            <p id="modal-address"></p>
+
+            <p>
+                Would you like to open this location in Google Maps?
+            </p>
+
+            <div class="modal-buttons">
+                <button id="confirm-btn" type="button">
+                    Open Maps
+                </button>
+
+                <button id="cancel-btn" type="button">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
 
 
     <footer>
