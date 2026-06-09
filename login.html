@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Good OLd's Bakery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <script src="js/auth.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo/logo.png" alt="Good OLd's Bakery Logo">
+        </div>
+
+        <div class="nav">
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><button class="login-button"><a href="login.html">Login</a></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="auth-page">
+        <h1>Login</h1>
+
+        <section class="auth-container auth-container-small" aria-labelledby="login-title">
+            <h2 id="login-title">Welcome Back</h2>
+
+            <form id="login-form" novalidate>
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="email" autocomplete="email">
+                    <span class="error-message" id="login-email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" autocomplete="current-password">
+                    <span class="error-message" id="login-password-error"></span>
+                </div>
+
+                <button type="submit" class="auth-btn">Login</button>
+            </form>
+
+            <p class="auth-link">
+                Don't have an account?
+                <a href="register.html">Register Here</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Good OLd's Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

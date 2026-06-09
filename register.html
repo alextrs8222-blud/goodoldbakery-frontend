@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Good OLd's Bakery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <script src="js/auth.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo/logo.png" alt="Good OLd's Bakery Logo">
+        </div>
+
+        <div class="nav">
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><button class="login-button"><a href="login.html">Login</a></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="auth-page">
+        <h1>Register</h1>
+
+        <section class="auth-container" aria-labelledby="register-title">
+            <h2 id="register-title">Create Your Account</h2>
+
+            <form id="register-form" novalidate>
+                <div class="form-group">
+                    <label for="register-name">Name</label>
+                    <input type="text" id="register-name" name="name" autocomplete="name">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" name="email" autocomplete="email">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" name="password" autocomplete="new-password">
+                    <span class="error-message" id="password-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-dob">Date of Birth</label>
+                    <input type="date" id="register-dob" name="dob">
+                    <span class="error-message" id="dob-error"></span>
+                </div>
+
+                <fieldset class="form-group gender-group">
+                    <legend>Gender</legend>
+                    <div class="radio-options">
+                        <label>
+                            <input type="radio" name="gender" value="Male">
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Female">
+                            Female
+                        </label>
+                    </div>
+                    <span class="error-message" id="gender-error"></span>
+                </fieldset>
+
+                <button type="submit" class="auth-btn">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Good OLd's Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
